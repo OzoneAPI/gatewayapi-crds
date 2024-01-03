@@ -9,7 +9,7 @@ Note that Helm is not the reccomended way to install CRDs, and has no capability
 Add this repository to Helm.
 
 ```
-helm repo add examples https://ozoneapi.github.io/gatewayapi-crds
+helm repo add gatewayapi-crds https://ozoneapi.github.io/gatewayapi-crds
 ```
 
 Install an example.
