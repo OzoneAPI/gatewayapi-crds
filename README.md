@@ -1,17 +1,19 @@
-# Helm Example Repository
+# Gateway API CRDs
 
-Ahoy world!  I'm a Helm repository for example charts.
+Deploys K8s Gateway API CRDs. No official Helm chart exists for this, this is a stopgap while its under [discussion](https://github.com/kubernetes-sigs/gateway-api/discussions/934)
+
+Note that Helm is not the reccomended way to install CRDs, and has no capability to manage upgrades or remove old CRDs. However, consuming custom resource defitions like this can be helpful when bootstrapping a cluster. 
 
 ## Get started
 
 Add this repository to Helm.
 
 ```
-helm repo add examples https://helm.github.io/examples
+helm repo add examples https://ozoneapi.github.io/gatewayapi-crds
 ```
 
 Install an example.
 
 ```
-helm install ahoy examples/hello-world
+helm install gatewayapi-crds-standard gatewayapi-crds/gatewayapi-crds-standard
 ```
